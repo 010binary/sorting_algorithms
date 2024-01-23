@@ -1,9 +1,11 @@
 #include "sort.h"
 
 void swap_ints(int *a, int *b);
-void bitonic_merge(int *array, size_t size, size_t start, size_t seq, char flow);
-void bitonic_sequence(int *array, size_t size, size_t start, size_t seq, char flow);
 void bitonic_sort(int *array, size_t size);
+void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
+		char flow);
+void bitonic_sequence(int *array, size_t size, size_t start, size_t seq,
+		char flow);
 
 /**
  * swap_ints - Swap two integers in an array.
@@ -53,7 +55,8 @@ void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
  * @seq: The size of a block of the building bitonic sequence.
  * @flow: The direction to sort the bitonic sequence block in.
  */
-void bitonic_sequence(int *array, size_t size, size_t start, size_t seq, char flow)
+void bitonic_sequence(int *array, size_t size, size_t start, size_t seq,
+		char flow);
 {
 	size_t cut = seq / 2;
 	char *str = (flow == UP) ? "UP" : "DOWN";
