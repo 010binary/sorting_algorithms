@@ -10,11 +10,10 @@
 int max_value(int *array, int size)
 {
 	int max, i;
-    max = array[0];
 
-    if (size == 0) {
-        return max;
-    }
+	max = array[0];
+	if (size == 0)
+		return (max);
 
 	for (i = 1; i < size; i++)
 	{
